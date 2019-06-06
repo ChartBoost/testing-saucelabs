@@ -34,7 +34,6 @@ public class SauceUtils {
         caps.setCapability("platformVersion", System.getenv("platformVersion"));
         caps.setCapability("deviceOrientation", System.getenv("deviceOrientation"));
         caps.setCapability("name", scenario.getName());
-        caps.setCapability("testobject_api_key", "7BFC3C757213451DA8444001FBC04C68");
 
         return caps;
     }

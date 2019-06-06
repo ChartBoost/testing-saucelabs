@@ -5,8 +5,10 @@ clean_it:
 	mvn clean
 
 test_parallel:
-	make -j test_android_emulator_5
+	make -j test_iphone7_10
 
-test_android_emulator_5:
-	deviceOrientation=portrait platformVersion=5.1 platformName=Android mvn install
+test_iphone7_10:
+	deviceOrientation=portrait platformVersion=12.2  platformName=iOS mvn install
 
+test_ipad_air_9_3:
+	deviceOrientation=portrait platformVersion=9.3 platformName=iOS mvn install
